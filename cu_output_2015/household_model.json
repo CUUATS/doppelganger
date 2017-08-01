@@ -1,0 +1,599 @@
+{
+    "fieldnames": [
+        "num_people", 
+        "household_income", 
+        "num_vehicles"
+    ], 
+    "type_to_network": {
+        "0": {
+            "class": "BayesianNetwork", 
+            "name": "205885664", 
+            "states": [
+                {
+                    "class": "State", 
+                    "distribution": {
+                        "class": "Distribution", 
+                        "frozen": false, 
+                        "name": "DiscreteDistribution", 
+                        "parameters": [
+                            {
+                                "0": 1.0
+                            }
+                        ]
+                    }, 
+                    "name": "0", 
+                    "weight": 1.0
+                }, 
+                {
+                    "class": "State", 
+                    "distribution": {
+                        "class": "Distribution", 
+                        "name": "ConditionalProbabilityTable", 
+                        "parents": [], 
+                        "table": [
+                            [
+                                "0", 
+                                "<=40000", 
+                                "1.0"
+                            ]
+                        ]
+                    }, 
+                    "name": "1", 
+                    "weight": 1.0
+                }, 
+                {
+                    "class": "State", 
+                    "distribution": {
+                        "class": "Distribution", 
+                        "name": "ConditionalProbabilityTable", 
+                        "parents": [], 
+                        "table": [
+                            [
+                                "0", 
+                                "<=40000", 
+                                "0", 
+                                "1.0"
+                            ]
+                        ]
+                    }, 
+                    "name": "2", 
+                    "weight": 1.0
+                }
+            ], 
+            "structure": [
+                [], 
+                [
+                    0
+                ], 
+                [
+                    0, 
+                    1
+                ]
+            ]
+        }, 
+        "1": {
+            "class": "BayesianNetwork", 
+            "name": "205885816", 
+            "states": [
+                {
+                    "class": "State", 
+                    "distribution": {
+                        "class": "Distribution", 
+                        "frozen": false, 
+                        "name": "DiscreteDistribution", 
+                        "parameters": [
+                            {
+                                "1": 1.0
+                            }
+                        ]
+                    }, 
+                    "name": "0", 
+                    "weight": 1.0
+                }, 
+                {
+                    "class": "State", 
+                    "distribution": {
+                        "class": "Distribution", 
+                        "name": "ConditionalProbabilityTable", 
+                        "parents": [], 
+                        "table": [
+                            [
+                                "1", 
+                                "40000+", 
+                                "0.301993154822"
+                            ], 
+                            [
+                                "1", 
+                                "<=40000", 
+                                "0.698006845178"
+                            ]
+                        ]
+                    }, 
+                    "name": "1", 
+                    "weight": 1.0
+                }, 
+                {
+                    "class": "State", 
+                    "distribution": {
+                        "class": "Distribution", 
+                        "name": "ConditionalProbabilityTable", 
+                        "parents": [], 
+                        "table": [
+                            [
+                                "1", 
+                                "40000+", 
+                                "0", 
+                                "0.0893333333333"
+                            ], 
+                            [
+                                "1", 
+                                "40000+", 
+                                "1", 
+                                "0.745333333333"
+                            ], 
+                            [
+                                "1", 
+                                "40000+", 
+                                "2", 
+                                "0.143333333333"
+                            ], 
+                            [
+                                "1", 
+                                "40000+", 
+                                "3", 
+                                "0.022"
+                            ], 
+                            [
+                                "1", 
+                                "40000+", 
+                                "6", 
+                                "0.0"
+                            ], 
+                            [
+                                "1", 
+                                "<=40000", 
+                                "0", 
+                                "0.283241995962"
+                            ], 
+                            [
+                                "1", 
+                                "<=40000", 
+                                "1", 
+                                "0.611191231612"
+                            ], 
+                            [
+                                "1", 
+                                "<=40000", 
+                                "2", 
+                                "0.0871070089414"
+                            ], 
+                            [
+                                "1", 
+                                "<=40000", 
+                                "3", 
+                                "0.0129795211999"
+                            ], 
+                            [
+                                "1", 
+                                "<=40000", 
+                                "6", 
+                                "0.0054802422844"
+                            ]
+                        ]
+                    }, 
+                    "name": "2", 
+                    "weight": 1.0
+                }
+            ], 
+            "structure": [
+                [], 
+                [
+                    0
+                ], 
+                [
+                    0, 
+                    1
+                ]
+            ]
+        }, 
+        "2": {
+            "class": "BayesianNetwork", 
+            "name": "205885968", 
+            "states": [
+                {
+                    "class": "State", 
+                    "distribution": {
+                        "class": "Distribution", 
+                        "frozen": false, 
+                        "name": "DiscreteDistribution", 
+                        "parameters": [
+                            {
+                                "2": 1.0
+                            }
+                        ]
+                    }, 
+                    "name": "0", 
+                    "weight": 1.0
+                }, 
+                {
+                    "class": "State", 
+                    "distribution": {
+                        "class": "Distribution", 
+                        "name": "ConditionalProbabilityTable", 
+                        "parents": [], 
+                        "table": [
+                            [
+                                "2", 
+                                "40000+", 
+                                "0.574325515782"
+                            ], 
+                            [
+                                "2", 
+                                "<=40000", 
+                                "0.425674484218"
+                            ]
+                        ]
+                    }, 
+                    "name": "1", 
+                    "weight": 1.0
+                }, 
+                {
+                    "class": "State", 
+                    "distribution": {
+                        "class": "Distribution", 
+                        "name": "ConditionalProbabilityTable", 
+                        "parents": [], 
+                        "table": [
+                            [
+                                "2", 
+                                "40000+", 
+                                "0", 
+                                "0.00798280626343"
+                            ], 
+                            [
+                                "2", 
+                                "40000+", 
+                                "1", 
+                                "0.146146760823"
+                            ], 
+                            [
+                                "2", 
+                                "40000+", 
+                                "2", 
+                                "0.704329137243"
+                            ], 
+                            [
+                                "2", 
+                                "40000+", 
+                                "3", 
+                                "0.119742093951"
+                            ], 
+                            [
+                                "2", 
+                                "40000+", 
+                                "4", 
+                                "0.0217992017194"
+                            ], 
+                            [
+                                "2", 
+                                "<=40000", 
+                                "0", 
+                                "0.163214581607"
+                            ], 
+                            [
+                                "2", 
+                                "<=40000", 
+                                "1", 
+                                "0.391052195526"
+                            ], 
+                            [
+                                "2", 
+                                "<=40000", 
+                                "2", 
+                                "0.426263463132"
+                            ], 
+                            [
+                                "2", 
+                                "<=40000", 
+                                "3", 
+                                "0.0178127589064"
+                            ], 
+                            [
+                                "2", 
+                                "<=40000", 
+                                "4", 
+                                "0.0016570008285"
+                            ]
+                        ]
+                    }, 
+                    "name": "2", 
+                    "weight": 1.0
+                }
+            ], 
+            "structure": [
+                [], 
+                [
+                    0
+                ], 
+                [
+                    0, 
+                    1
+                ]
+            ]
+        }, 
+        "3": {
+            "class": "BayesianNetwork", 
+            "name": "205886120", 
+            "states": [
+                {
+                    "class": "State", 
+                    "distribution": {
+                        "class": "Distribution", 
+                        "frozen": false, 
+                        "name": "DiscreteDistribution", 
+                        "parameters": [
+                            {
+                                "3": 1.0
+                            }
+                        ]
+                    }, 
+                    "name": "0", 
+                    "weight": 1.0
+                }, 
+                {
+                    "class": "State", 
+                    "distribution": {
+                        "class": "Distribution", 
+                        "name": "ConditionalProbabilityTable", 
+                        "parents": [], 
+                        "table": [
+                            [
+                                "3", 
+                                "40000+", 
+                                "0.401019541206"
+                            ], 
+                            [
+                                "3", 
+                                "<=40000", 
+                                "0.598980458794"
+                            ]
+                        ]
+                    }, 
+                    "name": "1", 
+                    "weight": 1.0
+                }, 
+                {
+                    "class": "State", 
+                    "distribution": {
+                        "class": "Distribution", 
+                        "name": "ConditionalProbabilityTable", 
+                        "parents": [], 
+                        "table": [
+                            [
+                                "3", 
+                                "40000+", 
+                                "0", 
+                                "0.00953389830508"
+                            ], 
+                            [
+                                "3", 
+                                "40000+", 
+                                "1", 
+                                "0.134533898305"
+                            ], 
+                            [
+                                "3", 
+                                "40000+", 
+                                "2", 
+                                "0.462923728814"
+                            ], 
+                            [
+                                "3", 
+                                "40000+", 
+                                "3", 
+                                "0.342161016949"
+                            ], 
+                            [
+                                "3", 
+                                "40000+", 
+                                "4", 
+                                "0.0434322033898"
+                            ], 
+                            [
+                                "3", 
+                                "40000+", 
+                                "5", 
+                                "0.00741525423729"
+                            ], 
+                            [
+                                "3", 
+                                "<=40000", 
+                                "0", 
+                                "0.120567375887"
+                            ], 
+                            [
+                                "3", 
+                                "<=40000", 
+                                "1", 
+                                "0.36524822695"
+                            ], 
+                            [
+                                "3", 
+                                "<=40000", 
+                                "2", 
+                                "0.405673758865"
+                            ], 
+                            [
+                                "3", 
+                                "<=40000", 
+                                "3", 
+                                "0.0815602836879"
+                            ], 
+                            [
+                                "3", 
+                                "<=40000", 
+                                "4", 
+                                "0.0248226950355"
+                            ], 
+                            [
+                                "3", 
+                                "<=40000", 
+                                "5", 
+                                "0.00212765957447"
+                            ]
+                        ]
+                    }, 
+                    "name": "2", 
+                    "weight": 1.0
+                }
+            ], 
+            "structure": [
+                [], 
+                [
+                    0
+                ], 
+                [
+                    0, 
+                    1
+                ]
+            ]
+        }, 
+        "4+": {
+            "class": "BayesianNetwork", 
+            "name": "205886272", 
+            "states": [
+                {
+                    "class": "State", 
+                    "distribution": {
+                        "class": "Distribution", 
+                        "frozen": false, 
+                        "name": "DiscreteDistribution", 
+                        "parameters": [
+                            {
+                                "4+": 1.0
+                            }
+                        ]
+                    }, 
+                    "name": "0", 
+                    "weight": 1.0
+                }, 
+                {
+                    "class": "State", 
+                    "distribution": {
+                        "class": "Distribution", 
+                        "name": "ConditionalProbabilityTable", 
+                        "parents": [], 
+                        "table": [
+                            [
+                                "4+", 
+                                "40000+", 
+                                "0.585284280936"
+                            ], 
+                            [
+                                "4+", 
+                                "<=40000", 
+                                "0.414715719064"
+                            ]
+                        ]
+                    }, 
+                    "name": "1", 
+                    "weight": 1.0
+                }, 
+                {
+                    "class": "State", 
+                    "distribution": {
+                        "class": "Distribution", 
+                        "name": "ConditionalProbabilityTable", 
+                        "parents": [], 
+                        "table": [
+                            [
+                                "4+", 
+                                "40000+", 
+                                "0", 
+                                "0.0262857142857"
+                            ], 
+                            [
+                                "4+", 
+                                "40000+", 
+                                "1", 
+                                "0.118857142857"
+                            ], 
+                            [
+                                "4+", 
+                                "40000+", 
+                                "2", 
+                                "0.425714285714"
+                            ], 
+                            [
+                                "4+", 
+                                "40000+", 
+                                "3", 
+                                "0.306285714286"
+                            ], 
+                            [
+                                "4+", 
+                                "40000+", 
+                                "4", 
+                                "0.0982857142857"
+                            ], 
+                            [
+                                "4+", 
+                                "40000+", 
+                                "5", 
+                                "0.0245714285714"
+                            ], 
+                            [
+                                "4+", 
+                                "<=40000", 
+                                "0", 
+                                "0.0983870967742"
+                            ], 
+                            [
+                                "4+", 
+                                "<=40000", 
+                                "1", 
+                                "0.474193548387"
+                            ], 
+                            [
+                                "4+", 
+                                "<=40000", 
+                                "2", 
+                                "0.314516129032"
+                            ], 
+                            [
+                                "4+", 
+                                "<=40000", 
+                                "3", 
+                                "0.1"
+                            ], 
+                            [
+                                "4+", 
+                                "<=40000", 
+                                "4", 
+                                "0.0129032258065"
+                            ], 
+                            [
+                                "4+", 
+                                "<=40000", 
+                                "5", 
+                                "0.0"
+                            ]
+                        ]
+                    }, 
+                    "name": "2", 
+                    "weight": 1.0
+                }
+            ], 
+            "structure": [
+                [], 
+                [
+                    0
+                ], 
+                [
+                    0, 
+                    1
+                ]
+            ]
+        }
+    }
+}

@@ -1,0 +1,465 @@
+{
+    "fieldnames": [
+        "age", 
+        "sex", 
+        "individual_income"
+    ], 
+    "type_to_network": {
+        "0-17": {
+            "class": "BayesianNetwork", 
+            "name": "194821008", 
+            "states": [
+                {
+                    "class": "State", 
+                    "distribution": {
+                        "class": "Distribution", 
+                        "frozen": false, 
+                        "name": "DiscreteDistribution", 
+                        "parameters": [
+                            {
+                                "0-17": 1.0
+                            }
+                        ]
+                    }, 
+                    "name": "0", 
+                    "weight": 1.0
+                }, 
+                {
+                    "class": "State", 
+                    "distribution": {
+                        "class": "Distribution", 
+                        "frozen": false, 
+                        "name": "DiscreteDistribution", 
+                        "parameters": [
+                            {
+                                "F": 0.4552420335684748, 
+                                "M": 0.5447579664315252
+                            }
+                        ]
+                    }, 
+                    "name": "1", 
+                    "weight": 1.0
+                }, 
+                {
+                    "class": "State", 
+                    "distribution": {
+                        "class": "Distribution", 
+                        "name": "ConditionalProbabilityTable", 
+                        "parents": [], 
+                        "table": [
+                            [
+                                "0-17", 
+                                "F", 
+                                "0-20000", 
+                                "0.049425594443"
+                            ], 
+                            [
+                                "0-17", 
+                                "F", 
+                                "<=0", 
+                                "0.950574405557"
+                            ], 
+                            [
+                                "0-17", 
+                                "M", 
+                                "0-20000", 
+                                "0.0212100915383"
+                            ], 
+                            [
+                                "0-17", 
+                                "M", 
+                                "<=0", 
+                                "0.978789908462"
+                            ]
+                        ]
+                    }, 
+                    "name": "2", 
+                    "weight": 1.0
+                }
+            ], 
+            "structure": [
+                [], 
+                [], 
+                [
+                    0, 
+                    1
+                ]
+            ]
+        }, 
+        "18-34": {
+            "class": "BayesianNetwork", 
+            "name": "194821160", 
+            "states": [
+                {
+                    "class": "State", 
+                    "distribution": {
+                        "class": "Distribution", 
+                        "frozen": false, 
+                        "name": "DiscreteDistribution", 
+                        "parameters": [
+                            {
+                                "18-34": 1.0
+                            }
+                        ]
+                    }, 
+                    "name": "0", 
+                    "weight": 1.0
+                }, 
+                {
+                    "class": "State", 
+                    "distribution": {
+                        "class": "Distribution", 
+                        "frozen": false, 
+                        "name": "DiscreteDistribution", 
+                        "parameters": [
+                            {
+                                "F": 0.4769895898515274, 
+                                "M": 0.5230104101484726
+                            }
+                        ]
+                    }, 
+                    "name": "1", 
+                    "weight": 1.0
+                }, 
+                {
+                    "class": "State", 
+                    "distribution": {
+                        "class": "Distribution", 
+                        "name": "ConditionalProbabilityTable", 
+                        "parents": [], 
+                        "table": [
+                            [
+                                "18-34", 
+                                "F", 
+                                "0-20000", 
+                                "0.636732259988"
+                            ], 
+                            [
+                                "18-34", 
+                                "F", 
+                                "100000+", 
+                                "0.00190816935003"
+                            ], 
+                            [
+                                "18-34", 
+                                "F", 
+                                "20000-40000", 
+                                "0.100059630292"
+                            ], 
+                            [
+                                "18-34", 
+                                "F", 
+                                "40000-80000", 
+                                "0.0363744782349"
+                            ], 
+                            [
+                                "18-34", 
+                                "F", 
+                                "80000-100000", 
+                                "0.00226595110316"
+                            ], 
+                            [
+                                "18-34", 
+                                "F", 
+                                "<=0", 
+                                "0.222659511032"
+                            ], 
+                            [
+                                "18-34", 
+                                "M", 
+                                "0-20000", 
+                                "0.59734609528"
+                            ], 
+                            [
+                                "18-34", 
+                                "M", 
+                                "100000+", 
+                                "0.00348053078094"
+                            ], 
+                            [
+                                "18-34", 
+                                "M", 
+                                "20000-40000", 
+                                "0.113878616489"
+                            ], 
+                            [
+                                "18-34", 
+                                "M", 
+                                "40000-80000", 
+                                "0.0745051120296"
+                            ], 
+                            [
+                                "18-34", 
+                                "M", 
+                                "80000-100000", 
+                                "0.0110941918643"
+                            ], 
+                            [
+                                "18-34", 
+                                "M", 
+                                "<=0", 
+                                "0.199695453557"
+                            ]
+                        ]
+                    }, 
+                    "name": "2", 
+                    "weight": 1.0
+                }
+            ], 
+            "structure": [
+                [], 
+                [], 
+                [
+                    0, 
+                    1
+                ]
+            ]
+        }, 
+        "35-64": {
+            "class": "BayesianNetwork", 
+            "name": "194821616", 
+            "states": [
+                {
+                    "class": "State", 
+                    "distribution": {
+                        "class": "Distribution", 
+                        "frozen": false, 
+                        "name": "DiscreteDistribution", 
+                        "parameters": [
+                            {
+                                "35-64": 1.0
+                            }
+                        ]
+                    }, 
+                    "name": "0", 
+                    "weight": 1.0
+                }, 
+                {
+                    "class": "State", 
+                    "distribution": {
+                        "class": "Distribution", 
+                        "frozen": false, 
+                        "name": "DiscreteDistribution", 
+                        "parameters": [
+                            {
+                                "F": 0.5013064863203197, 
+                                "M": 0.4986935136796803
+                            }
+                        ]
+                    }, 
+                    "name": "1", 
+                    "weight": 1.0
+                }, 
+                {
+                    "class": "State", 
+                    "distribution": {
+                        "class": "Distribution", 
+                        "name": "ConditionalProbabilityTable", 
+                        "parents": [], 
+                        "table": [
+                            [
+                                "35-64", 
+                                "F", 
+                                "0-20000", 
+                                "0.201900965813"
+                            ], 
+                            [
+                                "35-64", 
+                                "F", 
+                                "100000+", 
+                                "0.0156369768511"
+                            ], 
+                            [
+                                "35-64", 
+                                "F", 
+                                "20000-40000", 
+                                "0.244826000307"
+                            ], 
+                            [
+                                "35-64", 
+                                "F", 
+                                "40000-80000", 
+                                "0.244826000307"
+                            ], 
+                            [
+                                "35-64", 
+                                "F", 
+                                "80000-100000", 
+                                "0.010884562318"
+                            ], 
+                            [
+                                "35-64", 
+                                "F", 
+                                "<=0", 
+                                "0.281925494404"
+                            ], 
+                            [
+                                "35-64", 
+                                "M", 
+                                "0-20000", 
+                                "0.183387270766"
+                            ], 
+                            [
+                                "35-64", 
+                                "M", 
+                                "100000+", 
+                                "0.0671906302974"
+                            ], 
+                            [
+                                "35-64", 
+                                "M", 
+                                "20000-40000", 
+                                "0.173678532902"
+                            ], 
+                            [
+                                "35-64", 
+                                "M", 
+                                "40000-80000", 
+                                "0.305285868393"
+                            ], 
+                            [
+                                "35-64", 
+                                "M", 
+                                "80000-100000", 
+                                "0.0679611650485"
+                            ], 
+                            [
+                                "35-64", 
+                                "M", 
+                                "<=0", 
+                                "0.202496532594"
+                            ]
+                        ]
+                    }, 
+                    "name": "2", 
+                    "weight": 1.0
+                }
+            ], 
+            "structure": [
+                [], 
+                [], 
+                [
+                    0, 
+                    1
+                ]
+            ]
+        }, 
+        "65+": {
+            "class": "BayesianNetwork", 
+            "name": "194820400", 
+            "states": [
+                {
+                    "class": "State", 
+                    "distribution": {
+                        "class": "Distribution", 
+                        "frozen": false, 
+                        "name": "DiscreteDistribution", 
+                        "parameters": [
+                            {
+                                "65+": 1.0
+                            }
+                        ]
+                    }, 
+                    "name": "0", 
+                    "weight": 1.0
+                }, 
+                {
+                    "class": "State", 
+                    "distribution": {
+                        "class": "Distribution", 
+                        "frozen": false, 
+                        "name": "DiscreteDistribution", 
+                        "parameters": [
+                            {
+                                "F": 0.5993300695696985, 
+                                "M": 0.40066993043030147
+                            }
+                        ]
+                    }, 
+                    "name": "1", 
+                    "weight": 1.0
+                }, 
+                {
+                    "class": "State", 
+                    "distribution": {
+                        "class": "Distribution", 
+                        "name": "ConditionalProbabilityTable", 
+                        "parents": [], 
+                        "table": [
+                            [
+                                "65+", 
+                                "F", 
+                                "0-20000", 
+                                "0.085554600172"
+                            ], 
+                            [
+                                "65+", 
+                                "F", 
+                                "100000+", 
+                                "0.0"
+                            ], 
+                            [
+                                "65+", 
+                                "F", 
+                                "20000-40000", 
+                                "0.0318142734308"
+                            ], 
+                            [
+                                "65+", 
+                                "F", 
+                                "40000-80000", 
+                                "0.00945829750645"
+                            ], 
+                            [
+                                "65+", 
+                                "F", 
+                                "<=0", 
+                                "0.873172828891"
+                            ], 
+                            [
+                                "65+", 
+                                "M", 
+                                "0-20000", 
+                                "0.0868167202572"
+                            ], 
+                            [
+                                "65+", 
+                                "M", 
+                                "100000+", 
+                                "0.0308681672026"
+                            ], 
+                            [
+                                "65+", 
+                                "M", 
+                                "20000-40000", 
+                                "0.0360128617363"
+                            ], 
+                            [
+                                "65+", 
+                                "M", 
+                                "40000-80000", 
+                                "0.0282958199357"
+                            ], 
+                            [
+                                "65+", 
+                                "M", 
+                                "<=0", 
+                                "0.818006430868"
+                            ]
+                        ]
+                    }, 
+                    "name": "2", 
+                    "weight": 1.0
+                }
+            ], 
+            "structure": [
+                [], 
+                [], 
+                [
+                    0, 
+                    1
+                ]
+            ]
+        }
+    }
+}
